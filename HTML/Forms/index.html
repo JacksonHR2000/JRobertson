@@ -3,35 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Forms</title>
+
+<!--    <style>-->
+<!--        body {-->
+<!--            background: black;-->
+<!--        }-->
+<!--    </style>-->
 </head>
-<body>
-<h1>My Forms</h1>
+<body style="background: lightgoldenrodyellow;">
+<h1 style="border: red 10px solid; color:green; background-color: azure;> class="h1Tags">My Forms</h1>
+<h1 style="border: red 10px solid; color:blue" class="h1Tags">My superfluous h1 tag</h1>
 
 <form action="" method="post">
     <label for="doggyHorse">First Name:
-        <input type="text" name="" id="doggyHorse" placeholder="Top Text">
+        <input type="text" name="" id="doggyHorse" placeholder="Top Text" name="userName:">
     </label>
     <br>
 
     <label> Password:
-        <input type="password" name="KittyCat" id="id2" placeholder="Bottom Text">
+        <input type="password" name="Password" id="id2" placeholder="Bottom Text">
     </label>
     <br>
 
     <label>
         Age:
-        <input type="number" name="MickeyMouse" id="id3" placeholder="Furtherdown Text">
+        <input type="number" name="Age" id="id3" placeholder="Enter age" min="21" max="100">
     </label>
 
     <br>
 
     <label>
-        Email:
-        <input type="email" name="MickeyMouse" id="id4" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="The bottom Text">
+        Are you alive? o_O:
+        <input type="radio" name="LivingStatus" id=""value="Alive" checked>Yes
+        <input type="radio" name="LivingStatus"id=""value="Dead">No
+        <input type="radio" name="LivingStatus" id=""value="Zombie">I am dead...
     </label>
 
     <br>
-    <button>Submit</button>
+    <label>Colors:
+        <input type="checkbox" name="blueVal" id="" value="Blue">Blue
+        <input type="checkbox" name="redVal" id="" value="Red">Red
+        <input type="checkbox" name="greenVal" id="" value="Green">Green
+        <input type="checkbox" name="orangeVal" id="" value="Orange">Orange
+
+    </label>
+    <br>
+    <label>
+        Tell us about yourself!
+        <br>
+        <textarea rows="10" cols="2" maxlength="200" name="aboutMyself"></textarea>
+    </label>
+    <br>
+    <label>
+        Email:
+        <input type="email" name="email" id="id5" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="The bottom Text">
+    </label>
+    <label>
+        State:
+        <select name="State" id="">
+            <option value="Not selected">Select a state</option>
+            <option value="Texas">TX</option>
+            <option value="California">CA</option>
+            <option value="Virginia">VA</option>
+
+        </select>
+    </label>
+
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
 </form>
 
 </body>
