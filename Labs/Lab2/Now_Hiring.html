@@ -17,30 +17,30 @@
     <div>
         <form action="" method="post">
             <label>
-                First Name: <input type="text" Name="" id="firstName" name="firstName:">
+                First Name: <input type="text" id="FirstName" placeholder="" name="firstName" maxlength="20" required>
             </label>
             <br>
 
             <label>
-                Last Name: <input type="text" Name="" id="lastName" name="lastName:">
+                Last Name: <input type="text" id="LastName" name="lastName" placeholder="Optional" minlength="1" maxlength="20">
             </label>
             <br>
 
             <label>
-                Address 1: <input type="text" name="Address 1" id="add1" placeholder="">
+                Address 1: <input type="text" name="Address 1" id="add1" placeholder="" required>
             </label>
             <br>
 
             <label>
-                Address 2: <input type="text" name="Address 1" id="add2" placeholder="">
+                Address 2: <input type="text" name="Address 2" id="add2" placeholder="Optional">
             </label>
             <br>
             <label>
-                City: <input type="text" name="Address 1" id="city" placeholder="">
+                City: <input type="text" name="City" id="city" placeholder="" minlength="1" maxlength="30" required>
             </label>
             <label>
                 State:
-                <select name="State" id="state">
+                <select name="State" id="state" required>
                     <option value="Not selected">Select a state</option>
                     <option value="Texas">TX</option>
                     <option value="California">CA</option>
@@ -53,43 +53,50 @@
 
             <label>
                 Age:
-                <input type="number" name="Age" id="id3" placeholder="Enter age" min="21" max="100">
+                <input type="number" name="Age" id="age" min="21" max="99" required>
+            </label>
+            <br>
+
+            <label>
+                Phone # (xxx-xxx-xxx):
+                <input type="tel" name="Number" id="Number" pattern="^\d{3}-\d{3}-\d{4}$" required>
             </label>
             <br>
 
             <label>
                 Email:
-                <input type="email" name="email" id="id5" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="The bottom Text">
+                <input type="email" name="email" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <!--                [\w\d._%+-]+@[\w\d._%+-]+\.\w{2,4}-->
             </label>
             <br>
 
             <label>
                 Password:
-                <input type="email" name="email" id="id5" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="The bottom Text">
+                <input type="Password" name="Password" id="Password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,12}" required>
             </label>
             <br>
 
             <label>
                 What is your marital status?:
-                <input type="radio" name="maritalStatus" id="" value="Single" checked>Single
-                <input type="radio" name="maritalStatus"id="" value="Married">Married
-                <input type="radio" name="maritalStatus" id="" value="Complicated">Complicated
+                <input type="radio" name="MaritalStatus" id="" value="Single" checked>Single
+                <input type="radio" name="MaritalStatus" id="" value="Married">Married
+                <input type="radio" name="MaritalStatus" id="" value="Complicated">Complicated
             </label>
 
             <br>
             <label>Select your favorite Colors:
-                <input type="checkbox" name="blueVal" id="" value="Blue">Blue
-                <input type="checkbox" name="redVal" id="" value="Red">Red
-                <input type="checkbox" name="greenVal" id="" value="Green">Green
-                <input type="checkbox" name="orangeVal" id="" value="Orange">Orange
-
+                <input type="checkbox" name="BlueVal" id="" value="Blue">Blue
+                <input type="checkbox" name="RedVal" id="" value="Red">Red
+                <input type="checkbox" name="GreenVal" id="" value="Green">Green
+                <input type="checkbox" name="OrangeVal" id="" value="Orange">Orange
+                <input type="checkbox" name="LightGreenVal" id="" value="Light Green">Light Green
             </label>
             <br>
             <br>
             <label>
-                Do you have any more information to share about yourself?
+                Do you have any more information to share about yourself? (30 character max)
                 <br>
-                <textarea rows="20" cols="50" maxlength="300" name="aboutMyself"></textarea>
+                <textarea rows="4" cols="60" maxlength="30" name="aboutMyself" placeholder="Optional"></textarea>
             </label>
 <!--            Sample Data: airghaiuryghauyrhauyfghuagyufagrfuyagauvcbuavbauysvauysvbauyburvauyvbruyvbavrbavuvbrayuvbaruvybauvaybvuaybavuryauvbyvubfguyghvrbcuyavugfyubhsvsfaJKYGVCdbhzfskuaryhsbfjv gsjakusYGBHfj dgsajtykRSUYFHJvsjuagkfyHSVJbgjrakycdjnvbfhsjgkhraufilCJKNSDVbfhgrkuCDJNKVbfhsgkDNVbfhsgjkhuaDJNKVBHfkgstfldjnkvfbhgs-->
             <br>
