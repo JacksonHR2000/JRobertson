@@ -1,0 +1,39 @@
+body {
+    text-align: right;
+}
+
+.div1 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    top: 150px;
+    text-align: center;
+    margin: auto;
+}
+
+.div2 {
+    height: 200px;
+    width: 200px;
+    background-color: deepskyblue;
+    /*position: absolute;*/
+    /*z-index: 200;*/
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+    background-color: darkgray;
+    position: relative;
+}
+
+.innerDiv {
+    height: 100px;
+    width: 100px;
+    background-color: #bb5dbb;
+    position: relative;
+    bottom: 0px;
+    right: 50px;
+    text-align: center;
+    overflow: auto;
+}
