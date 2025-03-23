@@ -10,6 +10,19 @@
 //     characters. As the user enters characters, there should be a counter
 //     indicating how many characters the user still has to enter.
 
+const textarea = document.getElementById('aboutMyself');
+const charRemainingTextBox = document.getElementById('charsRemaining');
+const maxLength = 30
+
+textarea.addEventListener('input', function() {
+    const currentLength = textarea.value.length;
+    if (currentLength < maxLength)
+        charRemainingTextBox.textContent = maxLength - currentLength + " Characters remaining";
+    else
+        charRemainingTextBox.textContent = "ERROR: Too many characters!";
+
+});
+
     document.getElementById("myForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -52,12 +65,13 @@
     if (!phonePattern.test(formData.phone))
         console.log("ERROR: Phone number must be entered as 'XXX-XXX-XXXX'");
 
-    // Output data
-    console.log(formData);
-
 
     // About myself section
-        if (formData.aboutMyself.length < 30)
+        if (formData.aboutMyself.length > 30)
+            console.log("ERROR: Too many characters!");
+
+        // Output data
+        console.log(formData);
 });
 
 

@@ -33,42 +33,40 @@
             </ul>
         </div>
     </div>
-</nav>
-    <div class="container d-flex justify-content-center">
-        <div class="p-5 bg-white rounded-4 shadow" style="max-width: 1000px; width: 100%;">
-            <div id="legumeCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-block text-center p-4 bg-light">
-                            <img
-                                    id="carouselImage"
-                                    class="carousel-image"
-                                    src="./Assets/Menu-Green-Beans.webp"
-                                    alt="Slide 1"
-                            />
-                            <div class="carousel-caption">
-                                <div class="carousel-caption-opacity">
-                                    <h3 id="item">Green Beans</h3>
-                                    <p id="description">Go great served with steak!</p>
-                                    <p id="price"><strong>Price:</strong> $0.99</p>
-                                    <p id="sideEffects"><strong>Side Effects:</strong> Have slightly psychedelic properties</p>
-                                </div>
-                            </div>
+    </nav>
+    <h1>Our delicious menu!</h1>
+    <div id="legumeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-block text-center p-2 bg-light" data-bs-interval="1000">
+                    <img
+                            id="carouselImage"
+                            class="carousel-image"
+                            src="./Assets/Menu-Green-Beans.webp"
+                            alt="Slide 1"
+                    />
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-opacity">
+                            <h3 id="item">Green Beans</h3>
+                            <p id="description">Go great served with steak!</p>
+                            <p id="price"><strong>Price:</strong> $0.99</p>
+                            <p id="sideEffects"><strong>Side Effects:</strong> Have slightly psychedelic properties</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#legumeCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#legumeCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#legumeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#legumeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
     </div>
-    <h3>All sales from the Legume Emporium are final. NO REFUNDS.</h3>
-    <h6>We are not responsible for any side effects related to the consumption of our Legumes. This menu has not been evaluated by the FDA</h6>
-
+    <div class="textDiv">
+        <h3>All sales from the Legume Emporium are final. NO REFUNDS.</h3>
+        <h6>We are not responsible for any side effects related to the consumption of our Legumes. This menu has not been evaluated by the FDA</h6>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="MenuScript.js"></script>
