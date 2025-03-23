@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2</title>
+    <link rel="Bean Icon" type="image/x-icon" href="./Assets/GreenBeanLogo.ico">
+    <link rel="stylesheet" href="../Task3/styles.css">
+</head>
+<body>
+<button id="myButton">Click to add text :)</button>
+<p id="myParagraph">This text will be replaced! </p>
+<script>
+    let button = document.getElementById("myButton")
+    let paragraph = document.getElementById("myParagraph")
+    const newParagraph = "I am a bunch of text and when submitted I should be centered. If not, then I might need to do some more research on how to do. :)";
+
+
+    button.addEventListener("click", function(event) {
+        paragraph.textContent =  newParagraph;
+        paragraph.style.fontSize = "36em";
+        paragraph.style.textAlign = "center";
+    })
+</script>
+</body>
+</html>

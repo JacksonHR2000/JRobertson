@@ -1,0 +1,38 @@
+
+/*Dog buttons*/
+/*#nextDogBtn {*/
+/*    color: blue;*/
+/*}*/
+
+/*#previousDogBtn {*/
+/*    color: red;*/
+/*}*/
+
+/*#generateDogBtn {*/
+/*    color: black;*/
+/*}*/
+
+/*#selectedBreed {*/
+/*    color: darkmagenta;*/
+/*}*/
+
+h1 {
+    text-align: center;
+    background: lightskyblue;
+    color: #00ffff;
+}
+
+#controls {
+    padding-top: 20%;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#generateDogButtons {
+    text-align: center;
+}
+
+#dogImg {
+    border: 3px lightskyblue solid;
+}

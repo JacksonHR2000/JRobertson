@@ -1,0 +1,30 @@
+<!--    1) The method "delete" does not exist. Get or Post should be used -->
+<!--<form action="/submit" method="delete">-->
+
+<!--    2) The ID username does not exist, so the below label is invalid. The ID will have to be used somewhere -->
+<!--    3) The input type for a username should be text, not number -->
+<!--    <label for="username">Username:</label>-->
+<!--    <input type="number" id="first_name" name="username">-->
+<!--    <br><br>-->
+
+<!--    4) You're asking for a password, but the input type is email. You should be using type password -->
+<!--    <label for="email">Password:</label>-->
+<!--    <input type="email" id="email" name="doggy">-->
+<!--    <br><br>-->
+
+<!--    5) There is a typo below in the word type -->
+<!--    <button typ="submit">Submit</button>-->
+<!--</form>-->
+
+<!--Corrected code below-->
+<form action="/submit" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <br><br>
+
+    <label for="email">Password:</label>
+    <input type="password" id="email" name="doggy">
+    <br><br>
+
+    <button type="submit">Submit</button>
+</form>

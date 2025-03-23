@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="Bean Icon" type="image/x-icon" href="./Assets/GreenBeanLogo.ico">
+</head>
+<body>
+    <div>
+        <a href="index.html"> Home Page</a>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <a href="Menu.html" > Our Menu </a>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <a href="Now_Hiring.html" >Join our 'loving' family!</a>
+        <h1>Our 'Delicious' Menu</h1>
+    </div>
+    <div>
+        <form action="" method="post">
+            <label>
+                First Name: <input type="text" id="FirstName" placeholder="" name="firstName" maxlength="20" required>
+            </label>
+            <br>
+
+            <label>
+                Last Name: <input type="text" id="LastName" name="lastName" placeholder="Optional" minlength="1" maxlength="20">
+            </label>
+            <br>
+
+            <label>
+                Address 1: <input type="text" name="Address 1" id="add1" placeholder="" required>
+            </label>
+            <br>
+
+            <label>
+                Address 2: <input type="text" name="Address 2" id="add2" placeholder="Optional">
+            </label>
+            <br>
+            <label>
+                City: <input type="text" name="City" id="city" placeholder="" minlength="1" maxlength="30" required>
+            </label>
+            <label>
+                State:
+                <select name="State" id="state" required>
+                    <option value="Not selected">Select a state</option>
+                    <option value="Texas">TX</option>
+                    <option value="California">CA</option>
+                    <option value="Virginia">VA</option>
+                    <option value="New York">NY</option>
+
+                </select>
+            </label>
+            <br>
+
+            <label>
+                Age:
+                <input type="number" name="Age" id="age" min="21" max="99" required>
+            </label>
+            <br>
+
+            <label>
+                Phone # (xxx-xxx-xxx):
+                <input type="tel" name="Number" id="Number" pattern="^\d{3}-\d{3}-\d{4}$" required>
+            </label>
+            <br>
+
+            <label>
+                Email:
+                <input type="email" name="email" id="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <!--                [\w\d._%+-]+@[\w\d._%+-]+\.\w{2,4}-->
+            </label>
+            <br>
+
+            <label>
+                Password:
+                <input type="Password" name="Password" id="Password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,12}" required>
+            </label>
+            <br>
+
+            <label>
+                What is your marital status?:
+                <input type="radio" name="MaritalStatus" id="" value="Single" checked>Single
+                <input type="radio" name="MaritalStatus" id="" value="Married">Married
+                <input type="radio" name="MaritalStatus" id="" value="Complicated">Complicated
+            </label>
+
+            <br>
+            <label>Select your favorite Colors:
+                <input type="checkbox" name="BlueVal" id="" value="Blue">Blue
+                <input type="checkbox" name="RedVal" id="" value="Red">Red
+                <input type="checkbox" name="GreenVal" id="" value="Green">Green
+                <input type="checkbox" name="OrangeVal" id="" value="Orange">Orange
+                <input type="checkbox" name="LightGreenVal" id="" value="Light Green">Light Green
+            </label>
+            <br>
+            <br>
+            <label>
+                Do you have any more information to share about yourself? (30 character max)
+                <br>
+                <textarea max rows="4" cols="60" maxlength="30" name="aboutMyself" placeholder="Optional"></textarea>
+            </label>
+<!--            Sample Data: airghaiuryghauyrhauyfghuagyufagrfuyagauvcbuavbauysvauysvbauyburvauyvbruyvbavrbavuvbrayuvbaruvybauvaybvuaybavuryauvbyvubfguyghvrbcuyavugfyubhsvsfaJKYGVCdbhzfskuaryhsbfjv gsjakusYGBHfj dgsajtykRSUYFHJvsjuagkfyHSVJbgjrakycdjnvbfhsjgkhraufilCJKNSDVbfhgrkuCDJNKVbfhsgkDNVbfhsgjkhuaDJNKVBHfkgstfldjnkvfbhgs-->
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>

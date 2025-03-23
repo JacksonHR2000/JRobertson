@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2</title>
+    <link rel="Bean Icon" type="image/x-icon" href="./Assets/GreenBeanLogo.ico">
+    <link rel="stylesheet" href="../Task3/styles.css">
+</head>
+<body>
+<button id="myButton">Click to add some new list elements</button>
+<ul id="myList">
+    <li>I will be replaced by dogs!</li>
+</ul>
+<script>
+    let button = document.getElementById("myButton")
+    let list = document.getElementById("myList")
+    const dogBreeds = ["English Bulldogs", "Mastiff", "Mutt"];
+    dogBreeds.map
+
+
+    button.addEventListener("click", function(event) {
+        list.innerHTML = ``;
+        for (let i = 0; i < dogBreeds.length; i++)
+        list.innerHTML += `<li>${dogBreeds[i]}</li>`
+    })
+</script>
+</body>
+</html>

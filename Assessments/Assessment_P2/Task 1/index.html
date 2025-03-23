@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2</title>
+    <link rel="Bean Icon" type="image/x-icon" href="./Assets/GreenBeanLogo.ico">
+</head>
+<body>
+<form id ="ageForm">
+    <label>
+        Age:
+        <input type="number" name="Age" id="age" placeholder="Enter age">
+    </label>
+    <button id="submitBtn" type="submit">Submit</button>
+</form>
+<script>
+    document.getElementById("ageForm").addEventListener("submit", function(event) {
+
+        let ageInput = document.getElementById("age").value;
+
+        if (!isNaN(ageInput) && Number(ageInput) > 18) {
+            console.log("Age submitted successfully!")
+            alert("Age submitted successfully!");
+        } else {
+            console.log("ERROR: Please enter an age greater than 18")
+            alert("ERROR: Please enter an age greater than 18")
+        }
+    });
+</script>
+</body>
+</html>

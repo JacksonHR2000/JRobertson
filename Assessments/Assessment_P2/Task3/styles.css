@@ -1,0 +1,37 @@
+body {
+    /* 1) background-color is the wrong label. the background label would be proper */
+    /* 1a) Your images should also be in an assets folder :) */
+    /*background-color: #ffffff url("img_tree.png") no-repeat right top;*/
+
+    /* Corrected code below */
+     background: #ffffff url("./Assets/img_tree.png") no-repeat right top;
+
+}
+
+h1.horse  {
+    /* 2) You are missing a semicolon at the end of this statement */
+    /*font-size: 2em*/
+
+    /* Corrected code below */
+     font-size: 2em;
+}
+
+p {
+    /* 3) The hex-code below is incorrect. Hex runs 0-9 and A-F */
+    /* 4) text-family is not a label. The proper label here would be font-family */
+    /*color: #gg0000; !* hex for red *!*/
+    /*text-family: "Times New Roman", Times, serif;*/
+
+    /* Corrected code below */
+     color: #ff0000; /* ACTUAL hex for red */
+     font-family: "Times New Roman", Times, serif;
+}
+
+/* 5) "hidden" is not a valid parameter for display. You could use "none" here instead */
+#doggy  .horse  >  div {
+    /*display: hidden;*/
+
+    /* Corrected code below */
+    display: none;
+
+}
