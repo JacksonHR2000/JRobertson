@@ -5,7 +5,7 @@ import {dieVals} from "./helper.js";
 
 
 
-function Dice({number}) {
+function Table({number}) {
     const [count, setCount] = useState(0)
     return (
         <>
@@ -14,4 +14,4 @@ function Dice({number}) {
     )
 }
 
-export default Dice
+export default Table
