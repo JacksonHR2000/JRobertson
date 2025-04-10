@@ -8,6 +8,7 @@ import Contact from "./components/Contact.jsx";
 import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
 import axios from "axios";
 import MovieCard from "./components/MovieCard.jsx";
+import SearchAppBar from "./components/AppBar.jsx";
 
 
 function App() {
@@ -45,18 +46,9 @@ function App() {
     <>
         <h1>App Component</h1>
         <Router>
+            <SearchAppBar/>
             <div className="App">
                 <ul>
-                    <li>
-                    {/*    Normally we would use anchor tags*/}
-                        <Link to="/home">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact">Contact</Link>
-                    </li>
                     <hr/>
                     <Routes>
                         <Route>
